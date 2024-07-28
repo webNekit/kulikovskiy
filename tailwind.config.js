@@ -13,6 +13,13 @@ module.exports = {
       fontFamily: {
         primary: "Ubuntu, sans-serif",
       },
+      colors: {
+        'white': '#fff',
+        'black': '#000',
+        'green': {
+          DEFAULT: '#009746',
+        },
+      },
     },
   },
   plugins: [],

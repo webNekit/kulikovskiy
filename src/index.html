@@ -15,38 +15,119 @@
 </head>
 <body class="font-primary bg-gray-300">
     <header class="w-full pt-6" id="header">
-        <div class="container pb-6 border-b border-gray-400 flex items-center gap-6">
-            <div class="flex-1 flex items-center justify-start">
+        <div class="container pb-6 border-b border-gray-400 flex items-center flex-col md:flex-row gap-6">
+            <div class="flex-1 flex items-center justify-start order-2 md:order-1">
                 <p class="text-gray-600 text-sm">Малая родина — там, где я провел свое детство</p>
             </div>
-            <div class="flex-1 flex items-center justify-center">
+            <div class="flex-2 md:flex-1 flex items-center justify-center order-1 md:order-2">
                 <a href="./index.html" class="">
-                    <img src="./assets/img/logo.svg" alt="Логотип сайта">
+                    <img src="./assets/img/logo.svg" class="w-full h-auto object-contain" alt="Логотип сайта">
                 </a>
             </div>
-            <div class="flex-1 flex items-center justify-end">
-                <a href="#!" class="text-gray-600 text-sm hover:underline">Личный кабинет</a>
+            <div class="flex-1 flex items-center justify-end order-3 md:order-3">
+                <a href="#!" class="text-gray-600 text-sm hover:underline flex items-center gap-2"><i class="ri-login-box-line text-lg"></i> Личный кабинет</a>
             </div>
         </div>
         <div class="container flex items-center justify-center">
-            <nav class="w-full py-6">
-                <menu class="w-full flex items-center justify-center gap-6">
-                    <li class="inline-flex">
-                        <a href="#!" class="text-gray-800 uppercase hover:underline">Главная</a>
+            <nav class="w-full py-10" role="navigation">
+                <menu class="w-full flex items-center justify-start md:justify-center gap-4 md:gap-6 lg:gap-10 overflow-y-scroll md:overflow-auto" role="menu">
+                    <li class="inline-flex" role="menuitem">
+                        <a href="#!" class="text-black text-sm font-medium uppercase hover:underline">Главная</a>
                     </li>
-                    <li class="inline-flex">
-                        <a href="#!" class="text-gray-800 uppercase hover:underline">История</a>
+                    <li class="inline-flex" role="menuitem">
+                        <a href="#!" class="text-black text-sm font-medium uppercase hover:underline">История</a>
                     </li>
-                    <li class="inline-flex">
-                        <a href="#!" class="text-gray-800 uppercase hover:underline">События</a>
+                    <li class="inline-flex" role="menuitem">
+                        <a href="#!" class="text-black text-sm font-medium uppercase hover:underline">События</a>
                     </li>
-                    <li class="inline-flex">
-                        <a href="#!" class="text-gray-800 uppercase hover:underline">Галерея</a>
+                    <li class="inline-flex" role="menuitem">
+                        <a href="#!" class="text-black text-sm font-medium uppercase hover:underline">Проблемы</a>
+                    </li>
+                    <li class="inline-flex" role="menuitem">
+                        <a href="#!" class="text-black text-sm font-medium uppercase hover:underline">Галерея</a>
                     </li>
                 </menu>
             </nav>
         </div>
     </header>
+    <main class="w-full" id="main">
+        <div class="w-full" id="main-inner">
+            <section class="relative w-full h-screen flex flex-col bg-no-repeat bg-center bg-cover bg-fixed after:absolute after:top-0 after:ring-0 after:w-full after:h-full after:bg-black/70 after:z-10" style="background-image: url('./assets/img/hero-bg.jpeg');">
+                <div class="relative container w-full mt-auto pb-24 z-20 space-y-10">
+                    <h1 class="lg:w-[70%] mx-auto text-center text-2xl md:text-3xl lg:text-5xl leading-snug uppercase font-semibold text-white">Хутор Куликовский - место, где прошло моё детство</h1>
+                    <p class="text-white lg:w-[40%] mx-auto text-center text-lg font-light">в 2028 году исполнится 380 лет селу Ярское,Томская область Томский район. Дата основания села - 1648 год.</p>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="w-full bg-green py-16" id="footer">
+        <div class="container grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+            <div class="w-full">
+                <nav class="w-full space-y-3" role="navigation">
+                    <div class="w-full text-left text-black uppercase font-medium" role="heading">История</div>
+                    <ul class="w-full flex flex-col items-start space-y-2.5" role="list">
+                        <li class="inline-flex w-full" role="listitem">
+                            <a href="#!" class="w-full text-left text-sm font-light text-white hover:underline" role="link">Ссылка подвала</a>
+                        </li>
+                        <li class="inline-flex w-full" role="listitem">
+                            <a href="#!" class="w-full text-left text-sm font-light text-white hover:underline" role="link">Ссылка подвала</a>
+                        </li>
+                        <li class="inline-flex w-full" role="listitem">
+                            <a href="#!" class="w-full text-left text-sm font-light text-white hover:underline" role="link">Ссылка подвала</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="w-full">
+                <nav class="w-full space-y-3" role="navigation">
+                    <div class="w-full text-left text-black uppercase font-medium" role="heading">События</div>
+                    <ul class="w-full flex flex-col items-start space-y-2.5" role="list">
+                        <li class="inline-flex w-full" role="listitem">
+                            <a href="#!" class="w-full text-left text-sm font-light text-white hover:underline" role="link">Ссылка подвала</a>
+                        </li>
+                        <li class="inline-flex w-full" role="listitem">
+                            <a href="#!" class="w-full text-left text-sm font-light text-white hover:underline" role="link">Ссылка подвала</a>
+                        </li>
+                        <li class="inline-flex w-full" role="listitem">
+                            <a href="#!" class="w-full text-left text-sm font-light text-white hover:underline" role="link">Ссылка подвала</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="w-full">
+                <nav class="w-full space-y-3" role="navigation">
+                    <div class="w-full text-left text-black uppercase font-medium" role="heading">Проблемы</div>
+                    <ul class="w-full flex flex-col items-start space-y-2.5" role="list">
+                        <li class="inline-flex w-full" role="listitem">
+                            <a href="#!" class="w-full text-left text-sm font-light text-white hover:underline" role="link">Ссылка подвала</a>
+                        </li>
+                        <li class="inline-flex w-full" role="listitem">
+                            <a href="#!" class="w-full text-left text-sm font-light text-white hover:underline" role="link">Ссылка подвала</a>
+                        </li>
+                        <li class="inline-flex w-full" role="listitem">
+                            <a href="#!" class="w-full text-left text-sm font-light text-white hover:underline" role="link">Ссылка подвала</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="w-full">
+                <nav class="w-full space-y-3" role="navigation">
+                    <div class="w-full text-left text-black uppercase font-medium" role="heading">Прочее</div>
+                    <ul class="w-full flex flex-col items-start space-y-2.5" role="list">
+                        <li class="inline-flex w-full" role="listitem">
+                            <a href="#!" class="w-full text-left text-sm font-light text-white hover:underline" role="link">Ссылка подвала</a>
+                        </li>
+                        <li class="inline-flex w-full" role="listitem">
+                            <a href="#!" class="w-full text-left text-sm font-light text-white hover:underline" role="link">Ссылка подвала</a>
+                        </li>
+                        <li class="inline-flex w-full" role="listitem">
+                            <a href="#!" class="w-full text-left text-sm font-light text-white hover:underline" role="link">Ссылка подвала</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
     <script src="./js/main.js"></script>
 </body>
 </html>
