@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,13 +8,16 @@
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
     <!-- remix icon -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
     <!-- main style -->
     <link rel="stylesheet" href="./css/output.css">
 </head>
-<body class="font-primary bg-gray-300">
+
+<body class="font-primary bg-gray-200">
     <header class="w-full pt-6" id="header">
         <div class="container pb-6 border-b border-gray-400 flex items-center flex-col md:flex-row gap-6">
             <div class="flex-1 md:flex-1 flex items-center justify-start order-2 md:order-1">
@@ -25,26 +29,34 @@
                 </a>
             </div>
             <div class="flex-1 md:flex-1 flex items-center justify-end order-3 md:order-3">
-                <a href="#!" class="text-gray-600 text-sm hover:underline flex items-center gap-2"><i class="ri-login-box-line text-lg"></i> Личный кабинет</a>
+                <a href="#!" class="text-gray-600 text-sm hover:underline flex items-center gap-2"><i
+                        class="ri-login-box-line text-lg"></i> Личный кабинет</a>
             </div>
         </div>
         <div class="container flex items-center justify-center">
             <nav class="w-full py-10" role="navigation">
-                <menu class="w-full flex items-center justify-start md:justify-center gap-4 md:gap-6 lg:gap-10 overflow-y-scroll md:overflow-auto" role="menu">
+                <menu
+                    class="w-full flex items-center justify-start md:justify-center gap-4 md:gap-6 lg:gap-10 overflow-y-scroll md:overflow-auto"
+                    role="menu">
                     <li class="inline-flex" role="menuitem">
-                        <a href="./index.html" class="text-black text-sm font-medium uppercase hover:underline">Главная</a>
+                        <a href="./index.html"
+                            class="text-black text-sm font-medium uppercase hover:underline">Главная</a>
                     </li>
                     <li class="inline-flex" role="menuitem">
-                        <a href="./history.html" class="text-black text-sm font-medium uppercase hover:underline">История</a>
+                        <a href="./history.html"
+                            class="text-black text-sm font-medium uppercase hover:underline">История</a>
                     </li>
                     <li class="inline-flex" role="menuitem">
-                        <a href="./news.html" class="text-black text-sm font-medium uppercase hover:underline">События</a>
+                        <a href="./news.html"
+                            class="text-black text-sm font-medium uppercase hover:underline">События</a>
                     </li>
                     <li class="inline-flex" role="menuitem">
-                        <a href="./problem.html" class="text-black text-sm font-medium uppercase hover:underline">Проблемы</a>
+                        <a href="./problem.html"
+                            class="text-black text-sm font-medium uppercase hover:underline">Проблемы</a>
                     </li>
                     <li class="inline-flex" role="menuitem">
-                        <a href="./gallery.html" class="text-black text-sm font-medium uppercase hover:underline">Галерея</a>
+                        <a href="./gallery.html"
+                            class="text-black text-sm font-medium uppercase hover:underline">Галерея</a>
                     </li>
                 </menu>
             </nav>
@@ -52,10 +64,82 @@
     </header>
     <main class="w-full" id="main">
         <div class="w-full" id="main-inner">
-            <section class="relative w-full h-screen flex flex-col bg-no-repeat bg-center bg-cover bg-fixed after:absolute after:top-0 after:ring-0 after:w-full after:h-full after:bg-black/80 after:z-10" style="background-image: url('./assets/img/hero-bg.jpeg');">
+            <section
+                class="relative w-full h-screen flex flex-col bg-no-repeat bg-center bg-cover bg-fixed after:absolute after:top-0 after:ring-0 after:w-full after:h-full after:bg-black/80 after:z-10"
+                style="background-image: url('./assets/img/hero-bg.jpeg');">
                 <div class="relative container mb-auto mt-auto w-full z-20 space-y-10">
-                    <h1 class="lg:w-[70%] mx-auto text-center text-2xl md:text-4xl lg:text-6xl leading-snug uppercase font-semibold text-white">События и новости хутора</h1>
-                    <p class="text-white lg:w-[40%] mx-auto text-center text-lg font-light">В этом разделе собрана вся информация о новостях и событиях, которые предстоят в жизни нашего хутора.</p>
+                    <h1
+                        class="lg:w-[70%] mx-auto text-center text-2xl md:text-4xl lg:text-8xl leading-snug uppercase font-semibold text-white">
+                        События и новости хутора</h1>
+                    <p class="text-white lg:w-[40%] mx-auto text-center text-lg font-light">В этом разделе собрана вся
+                        информация о новостях и событиях, которые предстоят в жизни нашего хутора.</p>
+                </div>
+            </section>
+            <section class="w-full" id="content">
+                <div class="container">
+                    <div class="py-14 w-full flex items-start md:items-center justify-start flex-col md:flex-row gap-4 md:gap-6">
+                        <div class="text-black text-lg font-medium uppercase" role="heading">Сортировать:</div>
+                        <ul class="w-full flex items-center justify-start border-b border-gray-400">
+                            <li class="inline-flex">
+                                <button class="px-4 py-3 text-black cursor-pointer border-b border-black">Сначала новые</button>
+                            </li>
+                            <li class="inline-flex">
+                                <button class="px-4 py-3 text-gray-600 cursor-pointer">Сначала популярные</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="w-full pb-14">
+                        <ul role="listbox" class="w-full grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <li role="listitem" class="w-full h-full">
+                                <article class="w-full h-full flex flex-col bg-white rounded-md shadow-sm">
+                                    <div class="w-full space-y-5 px-6 py-6">
+                                        <div class="w-full flex items-start justify-between">
+                                            <h3 class="text-xl md:text-2xl lg:text-4xl text-black font-normal">Название новостной записи</h3>
+                                            <a href="./single-news.html" class="min-w-12 h-12 flex items-center justify-center rounded-full bg-green text-2xl text-white font-semibold">
+                                                <i class="ri-arrow-right-up-line"></i>
+                                            </a>
+                                        </div>
+                                        <p class="w-full text-left text-lg text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eligendi itaque quia animi commodi magni.</p>
+                                    </div>
+                                    <div class="w-full px-6">
+                                        <img loading="lazy" src="https://kartarf.ru/images/heritage/1080/9/91086.jpg" alt="" class="w-full rounded-tl-md rounded-tr-md object-cover object-center md:h-[345px]">
+                                    </div>
+                                </article>
+                            </li>
+                            <li role="listitem" class="w-full h-full">
+                                <article class="w-full h-full flex flex-col bg-white rounded-md shadow-sm">
+                                    <div class="w-full space-y-5 px-6 py-6">
+                                        <div class="w-full flex items-start justify-between">
+                                            <h3 class="text-xl md:text-2xl lg:text-4xl text-black font-normal">Название новостной записи</h3>
+                                            <a href="./single-news.html" class="min-w-12 h-12 flex items-center justify-center rounded-full bg-green text-2xl text-white font-semibold">
+                                                <i class="ri-arrow-right-up-line"></i>
+                                            </a>
+                                        </div>
+                                        <p class="w-full text-left text-lg text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eligendi itaque quia animi commodi magni.</p>
+                                    </div>
+                                    <div class="w-full px-6">
+                                        <img loading="lazy" src="https://kartarf.ru/images/heritage/1080/9/91086.jpg" alt="" class="w-full rounded-tl-md rounded-tr-md object-cover object-center md:h-[345px]">
+                                    </div>
+                                </article>
+                            </li>
+                            <li role="listitem" class="w-full h-full">
+                                <article class="w-full h-full flex flex-col bg-white rounded-md shadow-sm">
+                                    <div class="w-full space-y-5 px-6 py-6">
+                                        <div class="w-full flex items-start justify-between">
+                                            <h3 class="text-xl md:text-2xl lg:text-4xl text-black font-normal">Название новостной записи</h3>
+                                            <a href="./single-news.html" class="min-w-12 h-12 flex items-center justify-center rounded-full bg-green text-2xl text-white font-semibold">
+                                                <i class="ri-arrow-right-up-line"></i>
+                                            </a>
+                                        </div>
+                                        <p class="w-full text-left text-lg text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eligendi itaque quia animi commodi magni.</p>
+                                    </div>
+                                    <div class="w-full px-6">
+                                        <img loading="lazy" src="https://kartarf.ru/images/heritage/1080/9/91086.jpg" alt="" class="w-full rounded-tl-md rounded-tr-md object-cover object-center md:h-[345px]">
+                                    </div>
+                                </article>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </section>
         </div>
@@ -67,13 +151,16 @@
                     <div class="w-full text-left text-black uppercase font-medium" role="heading">История</div>
                     <ul class="w-full flex flex-col items-start space-y-2.5" role="list">
                         <li class="inline-flex w-full" role="listitem">
-                            <a href="#!" class="w-full text-left text-sm font-light text-white hover:underline" role="link">Ссылка подвала</a>
+                            <a href="#!" class="w-full text-left text-sm font-light text-white hover:underline"
+                                role="link">Ссылка подвала</a>
                         </li>
                         <li class="inline-flex w-full" role="listitem">
-                            <a href="#!" class="w-full text-left text-sm font-light text-white hover:underline" role="link">Ссылка подвала</a>
+                            <a href="#!" class="w-full text-left text-sm font-light text-white hover:underline"
+                                role="link">Ссылка подвала</a>
                         </li>
                         <li class="inline-flex w-full" role="listitem">
-                            <a href="#!" class="w-full text-left text-sm font-light text-white hover:underline" role="link">Ссылка подвала</a>
+                            <a href="#!" class="w-full text-left text-sm font-light text-white hover:underline"
+                                role="link">Ссылка подвала</a>
                         </li>
                     </ul>
                 </nav>
@@ -83,13 +170,16 @@
                     <div class="w-full text-left text-black uppercase font-medium" role="heading">События</div>
                     <ul class="w-full flex flex-col items-start space-y-2.5" role="list">
                         <li class="inline-flex w-full" role="listitem">
-                            <a href="#!" class="w-full text-left text-sm font-light text-white hover:underline" role="link">Ссылка подвала</a>
+                            <a href="#!" class="w-full text-left text-sm font-light text-white hover:underline"
+                                role="link">Ссылка подвала</a>
                         </li>
                         <li class="inline-flex w-full" role="listitem">
-                            <a href="#!" class="w-full text-left text-sm font-light text-white hover:underline" role="link">Ссылка подвала</a>
+                            <a href="#!" class="w-full text-left text-sm font-light text-white hover:underline"
+                                role="link">Ссылка подвала</a>
                         </li>
                         <li class="inline-flex w-full" role="listitem">
-                            <a href="#!" class="w-full text-left text-sm font-light text-white hover:underline" role="link">Ссылка подвала</a>
+                            <a href="#!" class="w-full text-left text-sm font-light text-white hover:underline"
+                                role="link">Ссылка подвала</a>
                         </li>
                     </ul>
                 </nav>
@@ -99,13 +189,16 @@
                     <div class="w-full text-left text-black uppercase font-medium" role="heading">Проблемы</div>
                     <ul class="w-full flex flex-col items-start space-y-2.5" role="list">
                         <li class="inline-flex w-full" role="listitem">
-                            <a href="#!" class="w-full text-left text-sm font-light text-white hover:underline" role="link">Ссылка подвала</a>
+                            <a href="#!" class="w-full text-left text-sm font-light text-white hover:underline"
+                                role="link">Ссылка подвала</a>
                         </li>
                         <li class="inline-flex w-full" role="listitem">
-                            <a href="#!" class="w-full text-left text-sm font-light text-white hover:underline" role="link">Ссылка подвала</a>
+                            <a href="#!" class="w-full text-left text-sm font-light text-white hover:underline"
+                                role="link">Ссылка подвала</a>
                         </li>
                         <li class="inline-flex w-full" role="listitem">
-                            <a href="#!" class="w-full text-left text-sm font-light text-white hover:underline" role="link">Ссылка подвала</a>
+                            <a href="#!" class="w-full text-left text-sm font-light text-white hover:underline"
+                                role="link">Ссылка подвала</a>
                         </li>
                     </ul>
                 </nav>
@@ -115,13 +208,16 @@
                     <div class="w-full text-left text-black uppercase font-medium" role="heading">Прочее</div>
                     <ul class="w-full flex flex-col items-start space-y-2.5" role="list">
                         <li class="inline-flex w-full" role="listitem">
-                            <a href="#!" class="w-full text-left text-sm font-light text-white hover:underline" role="link">Ссылка подвала</a>
+                            <a href="#!" class="w-full text-left text-sm font-light text-white hover:underline"
+                                role="link">Ссылка подвала</a>
                         </li>
                         <li class="inline-flex w-full" role="listitem">
-                            <a href="#!" class="w-full text-left text-sm font-light text-white hover:underline" role="link">Ссылка подвала</a>
+                            <a href="#!" class="w-full text-left text-sm font-light text-white hover:underline"
+                                role="link">Ссылка подвала</a>
                         </li>
                         <li class="inline-flex w-full" role="listitem">
-                            <a href="#!" class="w-full text-left text-sm font-light text-white hover:underline" role="link">Ссылка подвала</a>
+                            <a href="#!" class="w-full text-left text-sm font-light text-white hover:underline"
+                                role="link">Ссылка подвала</a>
                         </li>
                     </ul>
                 </nav>
@@ -131,6 +227,10 @@
             <p class="text-white font-medium text-sm" id="copyright">© 2023-2024 Никита Мочалов.</p>
         </div>
     </footer>
+    <!-- fslightbox script -->
+    <script src="./js/vendor/fslightbox.js"></script>
+    <!-- main script -->
     <script src="./js/main.js"></script>
 </body>
+
 </html>
