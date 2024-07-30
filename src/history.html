@@ -64,15 +64,48 @@
     </header>
     <main class="w-full" id="main">
         <div class="w-full" id="main-inner">
-            <section
-                class="relative w-full h-screen flex flex-col bg-no-repeat bg-center bg-cover bg-fixed after:absolute after:top-0 after:ring-0 after:w-full after:h-full after:bg-black/80 after:z-10"
-                style="background-image: url('./assets/img/hero-bg.jpeg');">
-                <div class="relative container w-full z-20 space-y-10">
+            <section class="relative w-full h-screen flex flex-col bg-no-repeat bg-center bg-cover bg-fixed after:absolute after:top-0 after:ring-0 after:w-full after:h-full after:bg-black/80 after:z-10"
+                style="background-image: url('./assets/img/hero-bg.jpeg');" id="hero">
+                <div class="relative container mb-auto mt-auto w-full z-20 space-y-10">
                     <h1
-                        class="lg:w-[70%] mx-auto text-center text-2xl md:text-4xl lg:text-6xl leading-snug uppercase font-semibold text-white">
-                        Хутор Куликовский - место, где прошло моё детство</h1>
-                    <p class="text-white lg:w-[40%] mx-auto text-center text-lg font-light">в 2028 году исполнится 380
-                        лет селу Ярское,Томская область Томский район. Дата основания села - 1648 год.</p>
+                        class="lg:w-[70%] mx-auto text-center text-2xl md:text-4xl lg:text-8xl leading-snug uppercase font-semibold text-white">
+                        История нашего хутора</h1>
+                    <p class="text-white lg:w-[40%] mx-auto text-center text-lg font-light">Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Est ea facere quas dicta atque tenetur iusto pariatur nihil, dolor
+                        necessitatibus et voluptatem impedit velit minima!</p>
+                </div>
+            </section>
+            <section class="w-full py-14 relative" id="content-primary">
+                <div class="max-w-5xl mx-auto px-4">
+                    <ul role="listbox" data-type="projects" class="w-full flex flex-col">
+                        <li role="listitem" class="inline-flex w-full">
+                            <a href="#!" data-image-source="https://balthazar.club/o/uploads/posts/2024-01/1704994145_balthazar-club-p-gori-letom-oboi-56.jpg" data-type="project" class="w-full pr-10 py-10 border-b border-gray-400 flex items-center justify-between">
+                                <h3 class="text-black uppercase font-semibold text-xl md:text-2xl lg:text-3xl">История Куликовской школы</h3>
+                                <span class="text-4xl font-semibold text-gray-500">
+                                    <i class="ri-arrow-right-line"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li role="listitem" class="inline-flex w-full">
+                            <a href="#!" data-image-source="https://balthazar.club/o/uploads/posts/2024-01/1704994145_balthazar-club-p-gori-letom-oboi-56.jpg" data-type="project" class="w-full pr-10 py-10 border-b border-gray-400 flex items-center justify-between">
+                                <h3 class="text-black uppercase font-semibold text-xl md:text-2xl lg:text-3xl">История Куликовской школы</h3>
+                                <span class="text-4xl font-semibold text-gray-500">
+                                    <i class="ri-arrow-right-line"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li role="listitem" class="inline-flex w-full">
+                            <a href="#!" data-image-source="https://wallpaper.forfun.com/fetch/03/03f8cd3f6796daaacc1fe43ffb7704b7.jpeg" data-type="project" class="w-full pr-10 py-10 border-b border-gray-400 flex items-center justify-between">
+                                <h3 class="text-black uppercase font-semibold text-xl md:text-2xl lg:text-3xl">История Куликовской школы</h3>
+                                <span class="text-4xl font-semibold text-gray-500">
+                                    <i class="ri-arrow-right-line"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="absolute w-[255px] h-[255px] overflow-hidden pointer-events-none origin-center scale-0 z-20 -translate-x-1/2 -translate-y-1/2" id="preview">
+                    <div class="w-full h-full bg-center bg-no-repeat bg-cover pointer-events-none" id="preview-img"></div>
                 </div>
             </section>
         </div>
@@ -162,6 +195,8 @@
     </footer>
     <!-- fslightbox script -->
     <script src="./js/vendor/fslightbox.js"></script>
+    <!-- gsap script -->
+     <script src="./js/vendor/gsap.min.js"></script>
     <!-- main script -->
     <script src="./js/main.js"></script>
 </body>
